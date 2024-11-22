@@ -6,13 +6,13 @@ import { Table, Column,  Model, DataType } from 'sequelize-typescript'
 
 class Packs extends Model {
     @Column({type:DataType.STRING(50)})
-    title: string
+    title: String
 
     @Column({type: DataType.FLOAT(6,2)})
-    price: number
+    price: Number
 
-    @Column({type: DataType.NUMBER})
-    photos: number
+    @Column({type: DataType.INTEGER})
+    photos: Number
 }
 
-export default Packs
+export default Packs 
